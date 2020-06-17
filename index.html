@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherApp</title>
+  <!-- Font Awesome -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="jumbotron">
+      <img src="./assets/jakarta.jpg" alt="jakarta view" />
+    </div>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="index.html" class="logo"><img src="./assets/weather.png" alt="logo" /></a>
+      <ul class="main-nav" id="js-menu">
+        <li><a href="index.html" class="nav-links">Home</a></li>
+        <li><a href="#another-city" class="nav-links">Another City</a></li>
+        <li><a href="#about" class="nav-links">About</a></li>
+      </ul>
+    </nav>
+    <div class="header-wrapper">
+      <div class="col-head">
+        <div class="card top ">
+          <h1 id="mainCityHead-head"></h1>
+          <p id="mainCityHead-date" >Hari, Tanggal, Jam</p>
+          <div class="weather-icon">
+            <img id="mainCityHead-icon" src="" alt=""></div>
+          <div >
+            <p><span id="mainCityHead-temp">?</span> °C</p>
+          </div>
+          <div>
+            <p id="mainCityHead-desc">_</p>
+          </div>
+        </div> 2
+      </div>
+  </header>
+  <br class="break" />
+  <main>
+    <h2 id="another-city">Another City</h2>
+    <div id="content" class="row">
+      <article class="card other">
+        <div class="app-title">
+          <h2 id="secondCity-head"></h2>
+        </div>
+        <div class="weather-container">
+          <div class="weather-icon">
+            <img id="secondCity-icon" src="" alt="">
+          </div>
+          <div class="temperature-value">
+            <p><span id="secondCity-temp">?</span> °C</p>
+          </div>
+          <div class="temperature-description">
+            <p id="secondCity-desc">_</p>
+          </div>
+        </div>
+      </article>
+      <article class="card other">
+        <div class="app-title">
+          <h2 id="thirdCity-head"></h2>
+        </div>
+        <div class="notification"></div>
+        <div class="weather-container">
+          <div class="weather-icon">
+            <img id="thirdCity-icon" src="" alt="">
+          </div>
+          <div class="temperature-value">
+            <p><span id="thirdCity-temp">?</span> °C</p>
+          </div>
+          <div class="temperature-description">
+            <p id="thirdCity-desc">_</p>
+          </div>
+        </div>
+      </article>
+      <article class="card other">
+        <div class="app-title">
+          <h2 id="fourthCity-head"></h2>
+        </div>
+        <div class="notification"></div>
+        <div class="weather-container">
+          <div class="weather-icon">
+            <img id="fourthCity-icon" src="" alt="">
+          </div>
+          <div class="temperature-value">
+            <p><span id="fourthCity-temp">?</span> °C</p>
+          </div>
+          <div class="temperature-description">
+            <p id="fourthCity-desc">_</p>
+          </div>
+        </div>
+      </article>
+      <article class="card other">
+        <div class="app-title">
+          <h2 id="fifthCity-head"></h2>
+        </div>
+        <div class="notification"></div>
+        <div class="weather-container">
+          <div class="weather-icon">
+            <img id="fifthCity-icon" src="" alt="">
+          </div>
+          <div class="temperature-value">
+            <p><span id="fifthCity-temp">?</span> °C</p>
+          </div>
+          <div class="temperature-description">
+            <p id="fifthCity-desc">_</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <aside class="about">
+
+      <div class="about-card">
+        <h2 id="about">About Me</h2>
+        <img src="/assets/circle-cropped.png" alt="my pic">
+        <div class="about-text">Ahmad Fakhrozy is Full-stack developer which love to challenge himself to learn new things. <br />
+          I've build my own fullstack apps using HTML, CSS, Javascript, reactJS, <br />
+          MongoDB, Mongoose, Sequelize, MySql,git and <br />
+          deploy my own app into Amazon Web Server and Google Cloud. </div>
+      </div>
+
+    </aside>
+    <footer class="footer">
+      <hr />
+      <a href="https://github.com/ozy-ahmad" target="_blank"><i class="social-icon fab fa-github"></i></a>
+      <p>Copyright &copy; Ahmad Fakhrozy</p>
+    </footer>
+  </main>
+  <script src="/navbar.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
